@@ -2,38 +2,29 @@
 
 ## A
 
-### API (Application Programming Interface)
-Sekumpulan aturan dan protokol yang memungkinkan aplikasi atau program berkomunikasi satu sama lain. Beberapa situs web menyediakan API resmi sebagai alternatif web scraping.
-
-### Asynchronous Scraping
-Teknik scraping yang memungkinkan program melakukan beberapa permintaan secara bersamaan tanpa harus menunggu satu permintaan selesai sebelum memulai yang berikutnya.
+### ARP (Address Resolution Protocol)
+Protokol yang digunakan untuk menemukan alamat MAC (Media Access Control) dari perangkat berdasarkan alamat IP-nya. Digunakan dalam **host discovery** pada jaringan lokal.
 
 ## B
 
-### BeautifulSoup
-Pustaka Python yang populer untuk parsing HTML dan XML, memudahkan ekstraksi data dari dokumen web.
-
-### Bot Detection
-Mekanisme yang digunakan oleh situs web untuk mengidentifikasi dan memblokir aktivitas scraping otomatis.
-
-### Browserless
-Layanan yang menyediakan browser headless berbasis cloud untuk keperluan web scraping.
+### Boolean-based Blind SQL Injection
+Teknik SQL Injection di mana penyerang mengirimkan query SQL yang menghasilkan respons berbeda berdasarkan kondisi benar atau salah (boolean). Digunakan ketika hasil query tidak langsung terlihat.
 
 ## C
 
-### Cheerio
-Pustaka JavaScript yang cepat, fleksibel, dan ramping untuk parsing dan manipulasi HTML, mirip dengan jQuery.
-
-### Caching
-Teknik penyimpanan sementara data yang telah diambil untuk mengurangi jumlah permintaan ke server dan mempercepat proses scraping.
-
 ### CAPTCHA
 Challenge-response test yang digunakan untuk menentukan apakah pengguna adalah manusia atau bot.
+
+### Closed Port
+Port yang tidak menerima koneksi dari luar. Biasanya menunjukkan bahwa layanan tidak aktif atau diblokir oleh firewall.
 
 ### CSS Selector
 Pola yang digunakan untuk memilih elemen HTML tertentu pada halaman web.
 
 ## D
+
+### Database Fingerprinting
+Proses mengidentifikasi jenis dan versi database yang digunakan oleh aplikasi web. Berguna dalam **SQL Injection** untuk menentukan teknik eksploitasi yang tepat.
 
 ### DOM (Document Object Model)
 Representasi struktur dokumen HTML/XML sebagai pohon objek yang dapat dimanipulasi oleh bahasa seperti JavaScript.
@@ -41,30 +32,21 @@ Representasi struktur dokumen HTML/XML sebagai pohon objek yang dapat dimanipula
 ### Dynamic Content
 Konten web yang dimuat setelah halaman utama atau yang diperbarui tanpa refresh halaman penuh, sering menggunakan JavaScript.
 
-### Data Cleaning
-Proses memurnikan dan menstandarisasi data yang discrape untuk menghilangkan format yang tidak konsisten atau informasi yang tidak relevan.
-
 ## E
 
-### Extraction
-Proses pengambilan data spesifik dari dokumen HTML.
-
-### Errors Handling
-Strategi untuk menangani kesalahan yang mungkin terjadi selama proses scraping, seperti kegagalan koneksi atau perubahan struktur halaman.
-
-### Ethical Scraping
-Praktik scraping yang mematuhi robots.txt, terms of service, dan tidak membebani server dengan terlalu banyak permintaan.
+### Enumeration
+Proses mengumpulkan informasi rinci tentang sistem, seperti pengguna, tabel database, atau layanan yang berjalan. Sering digunakan dalam **SQL Injection** dan **penetration testing**.
 
 ## F
 
-### Fetch API
-API JavaScript modern untuk melakukan permintaan HTTP yang digunakan dalam web scraping.
+### Filtered Port
+Port yang tidak dapat diakses karena diblokir oleh firewall atau mekanisme keamanan lainnya. Status ini menunjukkan bahwa port mungkin ada, tetapi tidak dapat diakses.
 
 ### Form Submission
 Proses mengotomatisasi pengisian dan pengiriman formulir web untuk mengakses data yang memerlukan input pengguna.
 
-### Filtering
-Teknik untuk menyaring dan memilih hanya data yang relevan dari hasil scraping.
+### FTP (File Transfer Protocol)
+Protokol yang digunakan untuk mentransfer file antara komputer melalui jaringan. Sering dipindai dalam **penetration testing** untuk menemukan layanan yang rentan.
 
 ## G
 
@@ -76,170 +58,118 @@ Teknik untuk menyamarkan lokasi geografis asli perangkat selama scraping untuk m
 
 ## H
 
+### Host
+Perangkat atau komputer yang terhubung ke jaringan dan memiliki alamat IP. Dalam **penetration testing**, host adalah target yang akan dipindai.
+
 ### Headers
 Metadata yang dikirim dengan permintaan HTTP yang dapat mempengaruhi bagaimana server merespons, sering dimodifikasi untuk menghindari deteksi bot.
 
 ### HTML Parser
 Program atau pustaka yang dapat membaca dan memahami struktur dokumen HTML.
 
-### Headless Browser
-Browser web tanpa antarmuka pengguna grafis, sering digunakan untuk scraping konten dinamis.
-
 ## I
+
+### ICMP (Internet Control Message Protocol)
+Protokol yang digunakan untuk mengirim pesan kesalahan dan informasi operasional dalam jaringan. Digunakan dalam **host discovery** dengan mengirimkan **ping** (ICMP Echo Request).
+
+### IP (Internet Protocol)
+Alamat unik yang digunakan untuk mengidentifikasi perangkat dalam jaringan. Dalam **penetration testing**, alamat IP adalah target utama untuk pemindaian.
 
 ### IP Rotation
 Teknik mengubah alamat IP secara berkala selama proses scraping untuk menghindari pembatasan berbasis IP.
 
-### Infinite Scrolling
-Teknik desain web di mana konten baru dimuat saat pengguna menggulir ke bawah, memerlukan pendekatan scraping khusus.
-
-## J
-
-### JSON (JavaScript Object Notation)
-Format data ringan yang sering digunakan untuk mengirimkan data antara server dan aplikasi web, serta menyimpan hasil scraping.
-
-### jQuery
-Pustaka JavaScript yang menyediakan metode untuk memanipulasi DOM dan melakukan permintaan AJAX, terkadang digunakan dalam scraping klien-sisi.
-
 ## K
+
+### Kali Linux
+Distribusi Linux yang dirancang khusus untuk keamanan informasi dan penetration testing. Sering digunakan untuk menjalankan alat seperti **Nmap** dan **SQLMap**.
 
 ### Keyword Extraction
 Teknik untuk mengidentifikasi dan mengekstrak kata atau frasa penting dari teks yang discrape.
 
 ## L
 
-### Logging
-Pencatatan informasi penting selama proses scraping untuk debugging dan analisis.
+### Layer 2 Scanning
+Pemindaian jaringan yang dilakukan pada lapisan data link (ARP). Digunakan untuk menemukan host dalam jaringan lokal.
 
-### Legal Considerations
-Aspek hukum yang perlu dipertimbangkan saat melakukan web scraping, termasuk hak cipta, syarat layanan, dan privasi data.
+### Layer 3 Scanning
+Pemindaian jaringan yang dilakukan pada lapisan jaringan (IP). Menggunakan protokol seperti ICMP untuk menemukan host.
+
+### Layer 4 Scanning
+Pemindaian jaringan yang dilakukan pada lapisan transport (TCP/UDP). Menggunakan port scanning untuk menemukan layanan yang berjalan.
 
 ## M
 
-### MIME Types
-Identifikasi standar yang menunjukkan jenis konten file, penting untuk memahami respons dari server web.
+### MAC Address (Media Access Control Address)
+Alamat unik yang ditetapkan ke antarmuka jaringan perangkat. Digunakan dalam **ARP scanning** untuk mengidentifikasi perangkat dalam jaringan lokal.
 
-### Multi-threading
-Teknik yang memungkinkan program menjalankan beberapa thread secara bersamaan untuk mempercepat proses scraping.
+### Metasploit
+Framework penetration testing yang digunakan untuk mengembangkan dan menjalankan exploit terhadap target yang rentan.
 
 ## N
 
-### Node.js
-Platform JavaScript yang memungkinkan eksekusi kode JavaScript di luar browser, sering digunakan untuk scraping.
-
-### Normalization
-Proses standarisasi data yang diekstrak ke format yang konsisten dan dapat digunakan.
+### Nmap (Network Mapper)
+Alat open source untuk pemindaian jaringan dan keamanan. Digunakan untuk menemukan host, port, layanan, dan kerentanan dalam jaringan.
 
 ## O
+
+### Open Port
+Port yang menerima koneksi dari luar. Menunjukkan bahwa layanan tertentu sedang berjalan dan dapat diakses.
 
 ### OAuth
 Protokol otorisasi yang memungkinkan aplikasi pihak ketiga mendapatkan akses terbatas ke layanan HTTP, terkadang digunakan untuk scraping API resmi.
 
-### Oxylabs
-Penyedia layanan proxy yang sering digunakan untuk web scraping skala besar.
-
 ## P
+
+### Port
+Endpoint komunikasi dalam jaringan. Setiap port dikaitkan dengan layanan tertentu, seperti HTTP (port 80) atau SSH (port 22).
 
 ### Proxy
 Server perantara yang bertindak sebagai jembatan antara scraper dan situs target, membantu menghindari pemblokiran dan pembatasan.
-
-### Pagination
-Teknik membagi konten web menjadi beberapa halaman yang memerlukan navigasi khusus selama proses scraping.
-
-### Puppeteer
-Pustaka Node.js yang menyediakan API untuk mengontrol Chrome atau Chromium, digunakan untuk scraping konten dinamis.
-
-### Python Requests
-Pustaka HTTP Python yang umum digunakan untuk membuat permintaan web dalam aplikasi scraping.
 
 ## Q
 
 ### Query Parameter
 Bagian dari URL yang berisi data yang dapat dimodifikasi untuk mempengaruhi konten yang ditampilkan, penting untuk scraping halaman dengan filter.
 
-### Queue
-Struktur data yang digunakan untuk mengelola antrian URL atau tugas scraping untuk diproses secara berurutan.
-
-## R
-
-### Rate Limiting
-Pembatasan jumlah permintaan yang dapat dilakukan ke server dalam periode waktu tertentu.
-
-### Robots.txt
-File teks yang memberikan petunjuk kepada web crawler tentang bagian mana dari situs yang boleh atau tidak boleh diakses.
-
-### Regular Expression (Regex)
-Pola pencarian yang digunakan untuk mencocokkan dan mengekstrak data dari teks, sering digunakan dalam web scraping.
-
 ## S
 
-### Selenium
-Framework otomatisasi browser yang digunakan untuk scraping konten dinamis dan berinteraksi dengan halaman web.
+### Service
+Program atau proses yang berjalan pada port tertentu dan menyediakan fungsi tertentu, seperti web server (HTTP) atau database (MySQL).
 
-### Session
-Objek yang mempertahankan cookie dan informasi status selama beberapa permintaan HTTP, membantu dalam melakukan scraping yang memerlukan otentikasi.
+### SQL Injection
+Serangan keamanan di mana penyerang menyisipkan query SQL berbahaya ke input aplikasi web untuk memanipulasi database.
 
-### Status Code
-Kode numerik yang mengindikasikan hasil dari permintaan HTTP (misalnya, 200 OK, 404 Not Found).
+### SMB (Server Message Block)
+Protokol yang digunakan untuk berbagi file, printer, dan sumber daya lainnya dalam jaringan. Sering menjadi target dalam **penetration testing**.
 
 ## T
 
-### Timeout
-Batas waktu maksimum yang ditetapkan untuk menunggu respons dari server sebelum menganggap permintaan gagal.
+### TCP (Transmission Control Protocol)
+Protokol komunikasi yang andal dan berorientasi koneksi. Digunakan dalam **port scanning** untuk menemukan layanan yang berjalan.
 
-### Throttling
-Teknik untuk membatasi kecepatan scraping untuk menghindari overloading server target.
+### Target
+Sistem atau perangkat yang menjadi sasaran dalam **penetration testing** atau **network scanning**.
 
-### Token
-String karakter yang digunakan untuk otentikasi atau mengidentifikasi sesi, sering diperlukan untuk scraping konten yang dilindungi.
+### Time-based Blind SQL Injection
+Teknik SQL Injection di mana penyerang menggunakan waktu respons untuk menentukan kebenaran suatu kondisi. Digunakan ketika hasil query tidak langsung terlihat.
 
 ## U
+
+### UDP (User Datagram Protocol)
+Protokol komunikasi yang tidak berorientasi koneksi dan lebih cepat daripada TCP. Digunakan dalam **port scanning** untuk menemukan layanan yang berjalan.
 
 ### User-Agent
 String yang mengidentifikasi browser dan sistem operasi yang membuat permintaan HTTP, sering dimodifikasi dalam web scraping.
 
-### URL Parsing
-Proses memecah URL menjadi komponen-komponennya untuk ekstraksi informasi atau pembangunan URL baru untuk scraping.
-
 ## V
 
-### Validation
-Proses verifikasi data yang discrape untuk memastikan keakuratan dan kelengkapannya.
+### Version Detection
+Proses mengidentifikasi versi layanan atau perangkat lunak yang berjalan pada port tertentu. Berguna dalam **penetration testing** untuk menemukan kerentanan.
 
-### Virtual Environment
-Lingkungan Python terisolasi yang memungkinkan proyek scraping memiliki dependensi sendiri terpisah dari instalasi sistem.
+### Vulnerability
+Kelemahan dalam sistem atau aplikasi yang dapat dieksploitasi oleh penyerang. **Nmap** dan **SQLMap** sering digunakan untuk mengidentifikasi kerentanan.
 
 ## W
 
-### Web Crawler
-Program yang secara sistematis menjelajahi web dengan mengikuti tautan dari satu halaman ke halaman lainnya.
-
-### Webhook
-Callback HTTP yang mengirimkan data ke aplikasi eksternal saat peristiwa tertentu terjadi, dapat digunakan untuk memproses data yang discrape secara real-time.
-
-### WGET
-Utilitas baris perintah untuk mengunduh konten dari web, dapat digunakan untuk scraping sederhana.
-
-## X
-
-### XML (eXtensible Markup Language)
-Bahasa markup yang digunakan untuk menyimpan dan mengangkut data, terkadang digunakan sebagai format respons API.
-
-### XPath
-Bahasa query untuk memilih node dari dokumen XML/HTML, menyediakan cara yang kuat untuk menavigasi dan mengekstrak data.
-
-## Y
-
-### YAML (YAML Ain't Markup Language)
-Format serialisasi data yang dirancang agar mudah dibaca manusia, sering digunakan untuk menyimpan konfigurasi scraper.
-
-### Yield
-Kata kunci dalam Python yang memungkinkan pembuatan generator, berguna untuk scraping dan pemrosesan dataset besar secara efisien.
-
-## Z
-
-### Zip
-Format file terkompresi yang sering digunakan untuk mengarchive dan mentransfer hasil scraping yang besar.
-
-### Zero-day Protection
-Mekanisme keamanan yang melindungi terhadap eksploitasi kerentanan baru, terkadang menjadi tantangan untuk scraper yang menargetkan situs dengan keamanan tinggi.
+### Wireshark
+Alat analisis jaringan yang digunakan untuk memantau dan menganalisis lalu lintas jaringan. Sering digunakan dalam **penetration testing**.
