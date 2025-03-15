@@ -1,0 +1,1148 @@
+╭─ cmd   coding  羽0ms                                                                      87   15, 18:53  
+╰─> nmap -PR <ip address>/24
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 18:53 SE Asia Standard Time
+Nmap scan report for <ip address>
+Host is up (0.0055s latency).
+Not shown: 999 closed tcp ports (reset) 
+PORT   STATE SERVICE
+53/tcp open  domain
+MAC Address: 6E:C0:B0:7A:75:73 (Unknown)
+
+Nmap scan report for <ip address>3     
+Host is up (0.016s latency).
+Not shown: 999 closed tcp ports (reset) 
+PORT     STATE SERVICE
+5555/tcp open  freeciv
+MAC Address: AA:32:D3:19:D3:E0 (Unknown)
+
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.00034s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1024/tcp open  kdm
+
+Nmap done: 256 IP addresses (3 hosts up) scanned in 22.16 seconds
+
+╭─ cmd   coding  羽22s 243ms                                                                87   15, 18:54  
+╰─> nmap -PR -sn <ip address>/24
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 18:54 SE Asia Standard Time
+Nmap scan report for <ip address>
+Host is up (0.0050s latency).
+MAC Address: 6E:C0:B0:7A:75:73 (Unknown)
+Nmap scan report for <ip address>3
+Host is up (0.015s latency).
+MAC Address: AA:32:D3:19:D3:E0 (Unknown)
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up.
+Nmap done: 256 IP addresses (3 hosts up) scanned in 2.78 seconds
+
+╭─ cmd   coding  羽2s 889ms                                                                 86   15, 18:54  
+╰─> nmap -PR -sn scanme.nmap.org
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 18:54 SE Asia Standard Time
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.23s latency).
+Nmap done: 1 IP address (1 host up) scanned in 0.67 seconds
+
+╭─ cmd   coding  羽731ms                                                                    86   15, 18:54  
+╰─> nmap -PE -sn scanme.nmap.org
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 18:55 SE Asia Standard Time
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.23s latency).
+Nmap done: 1 IP address (1 host up) scanned in 0.67 seconds
+
+╭─ cmd   coding  羽730ms                                                                    86   15, 18:55  
+╰─> nmap -PA80 scanme.nmap.org
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 18:56 SE Asia Standard Time
+Note: Host seems down. If it is really up, but blocking our ping probes, try -Pn
+Nmap done: 1 IP address (0 hosts up) scanned in 2.53 seconds
+
+╭─ cmd   coding  羽2s 593ms                                                                 85   15, 18:56  
+╰─> nmap -PA80 -Pn scanme.nmap.org
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 18:57 SE Asia Standard Time
+Nmap scan report for scanme.nmap.org (45.33.32.156)
+Host is up (0.23s latency).
+Not shown: 995 closed tcp ports (reset)
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+25/tcp    filtered smtp
+80/tcp    open     http
+9929/tcp  open     nping-echo
+31337/tcp open     Elite
+
+Nmap done: 1 IP address (1 host up) scanned in 14.75 seconds
+
+╭─ cmd   coding  羽14s 821ms                                                                85   15, 18:57  
+╰─> nmap -sn <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 18:58 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.17s latency).
+Nmap done: 1 IP address (1 host up) scanned in 0.63 seconds
+
+╭─ cmd   coding  羽702ms                                                                    84   15, 18:58  
+╰─> nmap <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 18:58 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.094s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Nmap done: 1 IP address (1 host up) scanned in 3.30 seconds
+
+╭─ cmd   coding  羽3s 377ms                                                                 84   15, 18:59  
+╰─> ipconfig
+
+Windows IP Configuration
+
+
+Ethernet adapter Ethernet:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 13:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 14:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+Wireless LAN adapter Local Area Connection* 15:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . : 
+
+Wireless LAN adapter Wi-Fi:
+
+   Connection-specific DNS Suffix  . :
+   Link-local IPv6 Address . . . . . : fe80::7096:7c9a:d979:1f84%13
+   IPv4 Address. . . . . . . . . . . : <ip address>
+   Subnet Mask . . . . . . . . . . . : 255.255.255.0
+   Default Gateway . . . . . . . . . : <ip address>
+
+Ethernet adapter Bluetooth Network Connection:
+
+   Media State . . . . . . . . . . . : Media disconnected
+   Connection-specific DNS Suffix  . :
+
+╭─ cmd   coding  羽187ms                                                                    84   15, 18:59  
+╰─> nmap <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:00 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.00043s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1024/tcp open  kdm
+
+Nmap done: 1 IP address (1 host up) scanned in 0.51 seconds
+
+╭─ cmd   coding  羽594ms                                                                    83   15, 19:00  
+╰─> nmap -p 3000 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:01 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.00s latency).
+
+PORT     STATE  SERVICE
+3000/tcp closed ppp
+
+Nmap done: 1 IP address (1 host up) scanned in 0.44 seconds
+
+╭─ cmd   coding  羽506ms                                                                    83   15, 19:01  
+╰─> nmap -p 5173 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:01 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.0010s latency).
+
+PORT     STATE  SERVICE
+5173/tcp closed unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 0.43 seconds
+
+╭─ cmd   coding  羽507ms                                                                    83   15, 19:01  
+╰─> start vitepress dev materi
+
+╭─ cmd   coding  羽102ms                                                                    83   15, 19:01  
+╰─> nmap -p 5173 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:01 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.0020s latency).
+
+PORT     STATE  SERVICE
+5173/tcp closed unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 0.44 seconds
+
+╭─ cmd   coding  羽513ms                                                                    83   15, 19:01  
+╰─> nmap -p 5173 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:01 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.0010s latency).
+
+PORT     STATE  SERVICE
+5173/tcp closed unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 0.43 seconds
+
+╭─ cmd   coding  羽502ms                                                                    83   15, 19:01  
+╰─> nmap -p 5173 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:01 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.00s latency).
+
+PORT     STATE  SERVICE
+5173/tcp closed unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 0.44 seconds
+
+╭─ cmd   coding  羽510ms                                                                    83   15, 19:01  
+╰─> start vitepress dev materi --host
+
+╭─ cmd   coding  羽59ms                                                                     82   15, 19:02  
+╰─> nmap -p 5173 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:02 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.0010s latency).
+
+PORT     STATE SERVICE
+5173/tcp open  unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 0.44 seconds
+
+╭─ cmd   coding  羽507ms                                                                    82   15, 19:02  
+╰─> nmap -p 5173 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:02 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.00s latency).
+
+PORT     STATE  SERVICE
+5173/tcp closed unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 0.44 seconds
+
+╭─ cmd   coding  羽507ms                                                                    82   15, 19:02  
+╰─> nmap -p 0 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:02 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.0010s latency).
+
+PORT  STATE  SERVICE
+0/tcp closed unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 0.44 seconds
+
+╭─ cmd   coding  羽516ms                                                                    82   15, 19:02  
+╰─> nmap -p 23901 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:02 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.00s latency).
+
+PORT      STATE  SERVICE
+23901/tcp closed unknown
+
+Nmap done: 1 IP address (1 host up) scanned in 0.44 seconds
+
+╭─ cmd   coding  羽511ms                                                                    82   15, 19:02  
+╰─> nmap -p 3000,5173,8000,8080 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:03 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.0010s latency).
+
+PORT     STATE  SERVICE
+3000/tcp closed ppp
+5173/tcp closed unknown
+8000/tcp closed http-alt
+8080/tcp closed http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 0.47 seconds
+
+╭─ cmd   coding  羽547ms                                                                    81   15, 19:03  
+╰─> start vitepress dev materi --host
+
+╭─ cmd   coding  羽24ms                                                                     81   15, 19:03  
+╰─> nmap -p 3000,5173,8000,8080 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:04 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.0010s latency).
+
+PORT     STATE  SERVICE
+3000/tcp closed ppp
+5173/tcp open   unknown
+8000/tcp closed http-alt
+8080/tcp closed http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 0.43 seconds
+
+╭─ cmd   coding  羽510ms                                                                    81   15, 19:04  
+╰─> nmap -p 80,3000,5173,8000,8080 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:04 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.0010s latency).
+
+PORT     STATE  SERVICE
+80/tcp   closed http
+3000/tcp closed ppp
+5173/tcp open   unknown
+8000/tcp closed http-alt
+8080/tcp closed http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 0.44 seconds
+
+╭─ cmd   coding  羽512ms                                                                    81   15, 19:04  
+╰─> nmap -p 80,443,3000,5173,8000,8080 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:04 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.0010s latency).
+
+PORT     STATE  SERVICE
+80/tcp   closed http
+443/tcp  closed https
+3000/tcp closed ppp
+5173/tcp open   unknown
+8000/tcp closed http-alt
+8080/tcp closed http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 0.44 seconds
+
+╭─ cmd   coding  羽514ms                                                                    81   15, 19:04  
+╰─> start ssh -i ~\.ssh\droplet -L 80:localhost:80 root@<external ip address>
+
+╭─ cmd   coding  羽45ms                                                                     81   15, 19:04  
+╰─> nmap -p 80,443,3000,5173,8000,8080 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:04 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.0010s latency).
+
+PORT     STATE  SERVICE
+80/tcp   closed http
+443/tcp  closed https
+3000/tcp closed ppp
+5173/tcp open   unknown
+8000/tcp closed http-alt
+8080/tcp closed http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 0.44 seconds
+
+╭─ cmd   coding  羽509ms                                                                    81   15, 19:04  
+╰─> nmap -p 80,443,3000,5173,8000,8080 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:05 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.00051s latency).
+
+PORT     STATE  SERVICE
+80/tcp   closed http
+443/tcp  closed https
+3000/tcp closed ppp
+5173/tcp open   unknown
+8000/tcp closed http-alt
+8080/tcp closed http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 0.44 seconds
+
+╭─ cmd   coding  羽515ms                                                                    80   15, 19:05  
+╰─> nmap -p 80,443,3000,5173,8000,8080 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:05 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.0010s latency).
+
+PORT     STATE  SERVICE
+80/tcp   closed http
+443/tcp  closed https
+3000/tcp closed ppp
+5173/tcp open   unknown
+8000/tcp closed http-alt
+8080/tcp closed http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 0.43 seconds
+
+╭─ cmd   coding  羽499ms                                                                    80   15, 19:05  
+╰─> nmap -p 80,443,3000,5173,8000,8080 <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:05 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.0010s latency).
+
+PORT     STATE  SERVICE
+80/tcp   closed http
+443/tcp  closed https
+3000/tcp closed ppp
+5173/tcp open   unknown
+8000/tcp closed http-alt
+8080/tcp closed http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 0.51 seconds
+
+╭─ cmd   coding  羽581ms                                                                    80   15, 19:05  
+╰─> nmap <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:07 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.072s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Nmap done: 1 IP address (1 host up) scanned in 3.02 seconds
+
+╭─ cmd   coding  羽3s 85ms                                                                  79   15, 19:07  
+╰─> nmap -p 80,443,3000,5173,8000,8080 <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:09 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.059s latency).
+
+PORT     STATE  SERVICE
+80/tcp   closed http
+443/tcp  closed https
+3000/tcp closed ppp
+5173/tcp closed unknown
+8000/tcp closed http-alt
+8080/tcp closed http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 0.58 seconds
+
+╭─ cmd   coding  羽658ms                                                                    78   15, 19:09  
+╰─> nmap -p 22,80,443,3000,5173,8000,8080 <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:09 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.050s latency).
+
+PORT     STATE  SERVICE
+22/tcp   open   ssh
+80/tcp   closed http
+443/tcp  closed https
+3000/tcp closed ppp
+5173/tcp closed unknown
+8000/tcp closed http-alt
+8080/tcp closed http-proxy
+
+Nmap done: 1 IP address (1 host up) scanned in 0.55 seconds
+
+╭─ cmd   coding  羽620ms                                                                    77   15, 19:09  
+╰─> nmap -sU <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:09 SE Asia Standard Time
+^C
+╭─ cmd   coding  羽9m 37s 974ms                                                             70   15, 19:19  
+╭─ cmd   coding  羽36s 437ms                                                                70   15, 19:20 
+
+╰─> nmap -sU <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:21 SE Asia Standard Time
+Stats: 0:00:56 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 6.40% done; ETC: 19:35 (0:13:39 remaining)
+^C
+╭─ cmd   coding  羽2m 41s 381ms                                                             68   15, 19:23 
+
+╰─> nmap -sU <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:23 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.00058s latency).
+Not shown: 994 closed udp ports (port-unreach)
+PORT     STATE         SERVICE
+137/udp  open|filtered netbios-ns
+138/udp  open|filtered netbios-dgm
+500/udp  open|filtered isakmp
+4500/udp open|filtered nat-t-ike
+5353/udp open|filtered zeroconf
+5355/udp open|filtered llmnr
+
+Nmap done: 1 IP address (1 host up) scanned in 53.96 seconds
+
+╭─ cmd   coding  羽54s 64ms                                                                 68   15, 19:24 
+
+╰─> nmap -sU <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 19:24 SE Asia Standard Time
+Stats: 0:13:56 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 80.90% done; ETC: 19:42 (0:03:17 remaining)
+Debugging Increased to 1.
+Stats: 0:14:04 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 81.70% done; ETC: 19:42 (0:03:09 remaining)
+Current sending rates: 1.08 packets / s, 47.59 bytes / s.
+Stats: 0:14:06 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 81.90% done; ETC: 19:42 (0:03:07 remaining)
+Current sending rates: 1.05 packets / s, 43.39 bytes / s.
+Overall sending rates: 1.12 packets / s, 55.63 bytes / s.
+Nmap scan report for <ip address>
+Host is up (0.0048s latency).
+Scanned at 2025-03-15 19:24:54 SE Asia Standard Time for 1036s
+Not shown: 997 closed udp ports (port-unreach)
+PORT     STATE         SERVICE
+53/udp   open          domain
+67/udp   open|filtered dhcps
+5353/udp open|filtered zeroconf
+MAC Address: 6E:C0:B0:7A:75:73 (Unknown)
+Final times for host: srtt: 4780 rttvar: 1101  to: 100000
+
+Read from C:\Program Files (x86)\Nmap: nmap-mac-prefixes nmap-protocols nmap-service-probes nmap-services.
+Nmap done: 1 IP address (1 host up) scanned in 1036.69 seconds
+
+╭─ cmd   coding  羽17m 16s 792ms                                                           57   15, 19:42  
+╰─> nmap -sU <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 20:06 SE Asia Standard Time
+Stats: 0:00:00 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 1.25% done; ETC: 20:06 (0:00:00 remaining)
+Stats: 0:00:03 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 1.57% done; ETC: 20:09 (0:02:06 remaining)
+Stats: 0:00:04 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 1.52% done; ETC: 20:10 (0:03:14 remaining)
+Stats: 0:00:05 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 1.50% done; ETC: 20:11 (0:04:23 remaining)
+Stats: 0:00:06 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 1.52% done; ETC: 20:12 (0:05:25 remaining)
+Stats: 0:00:06 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 1.82% done; ETC: 20:12 (0:05:24 remaining)
+Stats: 0:00:09 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 2.03% done; ETC: 20:13 (0:06:26 remaining)
+Stats: 0:00:10 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 2.04% done; ETC: 20:15 (0:08:01 remaining)
+Stats: 0:00:10 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 2.06% done; ETC: 20:14 (0:07:56 remaining)
+Stats: 0:00:11 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 2.16% done; ETC: 20:14 (0:07:34 remaining)
+Stats: 0:00:12 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 2.27% done; ETC: 20:14 (0:07:54 remaining)
+Stats: 0:00:13 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 2.29% done; ETC: 20:15 (0:08:32 remaining)
+Stats: 0:00:13 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 2.39% done; ETC: 20:15 (0:08:10 remaining)
+Stats: 0:02:24 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 14.59% done; ETC: 20:23 (0:14:03 remaining)
+Stats: 0:06:26 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 36.93% done; ETC: 20:24 (0:10:59 remaining)
+Stats: 0:13:26 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 75.96% done; ETC: 20:24 (0:04:15 remaining)
+Stats: 0:13:27 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 76.06% done; ETC: 20:24 (0:04:14 remaining)
+Stats: 0:14:41 elapsed; 0 hosts completed (1 up), 1 undergoing UDP Scan
+UDP Scan Timing: About 82.42% done; ETC: 20:24 (0:03:08 remaining)
+Nmap scan report for <external ip address>
+Host is up (0.063s latency).
+Not shown: 998 closed udp ports (port-unreach)
+PORT     STATE         SERVICE
+67/udp   open|filtered dhcps
+5355/udp open|filtered llmnr
+
+Nmap done: 1 IP address (1 host up) scanned in 1100.70 seconds
+
+╭─ cmd   coding  羽18m 20s 800ms                                                           24   15, 20:25  
+╰─> nmap -sV <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 20:29 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.12s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE VERSION
+22/tcp open     ssh     OpenSSH 9.2p1 Debian 2+deb12u5 (protocol 2.0)
+25/tcp filtered smtp
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.76 seconds
+
+╭─ cmd   coding  羽7s 863ms                                                                21   15, 20:29  
+╰─> nmap -sV <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 20:29 SE Asia Standard Time
+Nmap scan report for <ip address>
+Host is up (0.0039s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  dnsmasq 2.51
+MAC Address: 6E:C0:B0:7A:75:73 (Unknown)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 8.64 seconds
+
+╭─ cmd   coding  羽8s 748ms                                                                21   15, 20:30  
+╰─> nmap -sV <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 20:30 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.00073s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE       VERSION
+135/tcp  open  msrpc         Microsoft Windows RPC
+139/tcp  open  netbios-ssn   Microsoft Windows netbios-ssn
+445/tcp  open  microsoft-ds?
+1024/tcp open  msrpc         Microsoft Windows RPC
+Service Info: OS: Windows; CPE: cpe:/o:microsoft:windows
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 54.70 seconds
+
+╭─ cmd   coding  羽54s 840ms                                                               20   15, 20:31  
+╰─> nmap -sV <ip address>3
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 20:31 SE Asia Standard Time
+Nmap scan report for <ip address>3
+Host is up (0.026s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+5555/tcp open  adb     Android Debug Bridge (token auth required)
+MAC Address: AA:32:D3:19:D3:E0 (Unknown)
+Service Info: OS: Android; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 31.88 seconds
+
+╭─ cmd   coding  羽31s 968ms                                                               20   15, 20:32  
+╰─> nmap -sV <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 20:33 SE Asia Standard Time
+Nmap scan report for <ip address>
+Host is up (0.0051s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+53/tcp open  domain  dnsmasq 2.51
+MAC Address: 6E:C0:B0:7A:75:73 (Unknown)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 7.64 seconds
+
+╭─ cmd   coding  羽7s 731ms                                                                19   15, 20:33  
+╰─> nmap -O <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 20:33 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.055s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+Aggressive OS guesses: Linux 4.19 - 5.15 (98%), Linux 4.15 (93%), IPFire 2.27 (Linux 5.15 - 6.1) (93%), Linux 5.4 (93%)
+, Linux 5.0 - 5.14 (91%), MikroTik RouterOS 7.2 - 7.5 (Linux 5.6.3) (91%), Linux 3.11 - 4.9 (90%), Linux 3.2 - 3.8 (90%
+), Linux 4.15 - 5.19 (89%), Android TV OS 11 (Linux 4.19) (89%)
+No exact OS matches for host (test conditions non-ideal).
+Network Distance: 14 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 8.75 seconds
+
+╭─ cmd   coding  羽8s 843ms                                                                18   15, 20:34  
+╰─> nmap -O <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 20:34 SE Asia Standard Time
+Nmap scan report for host.docker.internal (<ip address>)
+Host is up (0.00074s latency).
+Not shown: 996 closed tcp ports (reset)
+PORT     STATE SERVICE
+135/tcp  open  msrpc
+139/tcp  open  netbios-ssn
+445/tcp  open  microsoft-ds
+1024/tcp open  kdm
+Device type: general purpose
+Running: Microsoft Windows 10
+OS CPE: cpe:/o:microsoft:windows_10
+OS details: Microsoft Windows 10 1809 - 21H2
+Network Distance: 0 hops
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 1.76 seconds
+
+╭─ cmd   coding  羽1s 867ms                                                                18   15, 20:34  
+╰─> nmap -O <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 20:35 SE Asia Standard Time
+Nmap scan report for <ip address>
+Host is up (0.0042s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+53/tcp open  domain
+MAC Address: 6E:C0:B0:7A:75:73 (Unknown)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=3/15%OT=53%CT=1%CU=41032%PV=Y%DS=1%DC=D%G=Y%M=6EC0B0%T
+OS:M=67D58217%P=i686-pc-windows-windows)SEQ(SP=103%GCD=1%ISR=10D%TI=Z%CI=I%
+OS:II=I%TS=8)SEQ(SP=106%GCD=1%ISR=109%TI=Z%CI=I%II=I%TS=9)SEQ(SP=F8%GCD=1%I
+OS:SR=104%TI=Z%CI=I%II=I%TS=7)SEQ(SP=FF%GCD=1%ISR=102%TI=Z%CI=I%II=I%TS=7)S
+OS:EQ(SP=FF%GCD=1%ISR=10E%TI=Z%CI=I%II=I%TS=8)OPS(O1=M5B4ST11NW9%O2=M5B4ST1
+OS:1NW9%O3=M5B4NNT11NW9%O4=M5B4ST11NW9%O5=M5B4ST11NW9%O6=M5B4ST11)WIN(W1=FE
+OS:88%W2=FE88%W3=FE88%W4=FE88%W5=FE88%W6=FE88)ECN(R=Y%DF=Y%T=40%W=FAF0%O=M5
+OS:B4%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%D
+OS:F=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O
+OS:=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W
+OS:=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID=G%R
+OS:IPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 13.36 seconds
+
+╭─ cmd   coding  羽13s 461ms                                                               18   15, 20:35  
+╰─> nmap -O <ip address>3
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 20:36 SE Asia Standard Time
+Nmap scan report for <ip address>3
+Host is up (0.010s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE
+5555/tcp open  freeciv
+MAC Address: AA:32:D3:19:D3:E0 (Unknown)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=3/15%OT=5555%CT=1%CU=35991%PV=Y%DS=1%DC=D%G=Y%M=AA32D3
+OS:%TM=67D582B0%P=i686-pc-windows-windows)SEQ(SP=102%GCD=1%ISR=10D%TI=Z%CI=
+OS:Z%II=I%TS=A)SEQ(SP=104%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=106%GCD=
+OS:1%ISR=10C%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=107%GCD=1%ISR=106%TI=Z%CI=Z%II=I%TS
+OS:=A)SEQ(SP=F9%GCD=1%ISR=10F%TI=Z%CI=Z%II=I%TS=A)OPS(O1=M5B4ST11NWA%O2=M5B
+OS:4ST11NWA%O3=M5B4NNT11NWA%O4=M5B4ST11NWA%O5=M5B4ST11NWA%O6=M5B4ST11)WIN(W
+OS:1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FFFF)ECN(R=Y%DF=Y%T=40%W=FFFF%
+OS:O=M5B4%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS%RD=0%Q=)T2(R=N)T3(R=N)T4(R
+OS:=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=
+OS:AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=
+OS:40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T=40%IPL=164%UN=0%RIPL=G%RID
+OS:=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=S)
+
+Network Distance: 1 hop
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 96.08 seconds
+
+╭─ cmd   coding  羽1m 36s 176ms                                                            17   15, 20:37  
+╰─> nmap -sV <ip address>3
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 20:38 SE Asia Standard Time
+Nmap scan report for <ip address>3
+Host is up (0.016s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE VERSION
+5555/tcp open  adb     Android Debug Bridge (token auth required)
+MAC Address: AA:32:D3:19:D3:E0 (Unknown)
+Service Info: OS: Android; CPE: cpe:/o:linux:linux_kernel
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 30.61 seconds
+
+╭─ cmd   coding  羽30s 698ms                                                               16   15, 20:39  
+╰─> nmap -O <ip address>3
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 20:39 SE Asia Standard Time
+Nmap scan report for <ip address>3
+Host is up (0.010s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT     STATE SERVICE
+5555/tcp open  freeciv
+MAC Address: AA:32:D3:19:D3:E0 (Unknown)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.95%E=4%D=3/15%OT=5555%CT=1%CU=32656%PV=Y%DS=1%DC=D%G=Y%M=AA32D3
+OS:%TM=67D58325%P=i686-pc-windows-windows)SEQ(SP=103%GCD=1%ISR=104%TI=Z%CI=
+OS:Z%II=I%TS=A)SEQ(SP=104%GCD=1%ISR=109%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=107%GCD=
+OS:1%ISR=10C%TI=Z%CI=Z%II=I%TS=A)SEQ(SP=FE%GCD=1%ISR=101%TI=Z%CI=Z%II=I%TS=
+OS:A)OPS(O1=M5B4ST11NWA%O2=M5B4ST11NWA%O3=M5B4NNT11NWA%O4=M5B4ST11NWA%O5=M5
+OS:B4ST11NWA%O6=M5B4ST11)WIN(W1=FFFF%W2=FFFF%W3=FFFF%W4=FFFF%W5=FFFF%W6=FFF
+OS:F)ECN(R=Y%DF=Y%T=40%W=FFFF%O=M5B4%CC=N%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=
+OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=
+OS:R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T
+OS:=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=
+OS:S)
+
+Network Distance: 1 hop
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 32.41 seconds
+
+╭─ cmd   coding  羽32s 514ms                                                               16   15, 20:39  
+╰─> nmap -T0 <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 20:40 SE Asia Standard Time
+Stats: 0:05:00 elapsed; 0 hosts completed (0 up), 1 undergoing Ping Scan
+Ping Scan Timing: About 0.00% done
+Stats: 0:10:00 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 0.00% done
+^C
+╭─ cmd   coding  羽24m 7s 931ms                                                            30   15, 21:04  
+╰─> nmap -T5 <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:04 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.083s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Nmap done: 1 IP address (1 host up) scanned in 4.44 seconds
+
+╭─ cmd   coding  羽4s 515ms                                                                31   15, 21:05  
+╰─> nmap -T3 <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:07 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.063s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Nmap done: 1 IP address (1 host up) scanned in 4.85 seconds
+
+╭─ cmd   coding  羽4s 915ms                                                                34   15, 21:07  
+╰─> nmap -T2 <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:07 SE Asia Standard Time
+Stats: 0:01:17 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 18.30% done; ETC: 21:14 (0:05:44 remaining)
+Stats: 0:01:19 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 18.70% done; ETC: 21:14 (0:05:43 remaining)
+Stats: 0:01:20 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 18.90% done; ETC: 21:14 (0:05:39 remaining)
+Stats: 0:01:20 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 19.10% done; ETC: 21:14 (0:05:39 remaining)
+Stats: 0:01:25 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 20.30% done; ETC: 21:14 (0:05:34 remaining)
+Stats: 0:04:15 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 61.53% done; ETC: 21:14 (0:02:39 remaining)
+Stats: 0:04:45 elapsed; 0 hosts completed (1 up), 1 undergoing SYN Stealth Scan
+SYN Stealth Scan Timing: About 68.73% done; ETC: 21:14 (0:02:09 remaining)
+Nmap scan report for <external ip address>
+Host is up (0.061s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Nmap done: 1 IP address (1 host up) scanned in 411.88 seconds
+
+╭─ cmd   coding  羽6m 51s 957ms                                                            41   15, 21:14  
+╰─> nmap -D RND:20 <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:19 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.060s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Nmap done: 1 IP address (1 host up) scanned in 49.53 seconds
+
+╭─ cmd   coding  羽49s 644ms                                                               46   15, 21:20  
+╰─> nmap -v -D RND:20 <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:20 SE Asia Standard Time
+Initiating Ping Scan at 21:20
+Scanning <external ip address> [4 ports]
+Completed Ping Scan at 21:20, 0.25s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 21:20
+Completed Parallel DNS resolution of 1 host. at 21:20, 0.00s elapsed
+Initiating SYN Stealth Scan at 21:20
+Scanning <external ip address> [1000 ports]
+Discovered open port 22/tcp on <external ip address>
+Increasing send delay for <external ip address> from 0 to 5 due to 141 out of 468 dropped probes since last increase.
+Increasing send delay for <external ip address> from 5 to 10 due to 11 out of 14 dropped probes since last increase.
+Increasing send delay for <external ip address> from 10 to 20 due to 11 out of 13 dropped probes since last increase.
+Increasing send delay for <external ip address> from 20 to 40 due to 11 out of 12 dropped probes since last increase.
+Increasing send delay for <external ip address> from 40 to 80 due to 11 out of 25 dropped probes since last increase.
+Completed SYN Stealth Scan at 21:21, 58.53s elapsed (1000 total ports)
+Nmap scan report for <external ip address>
+Host is up (0.069s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Read data files from: C:\Program Files (x86)\Nmap
+Nmap done: 1 IP address (1 host up) scanned in 59.19 seconds
+           Raw packets sent: 28329 (1.246MB) | Rcvd: 1010 (40.416KB)
+
+╭─ cmd   coding  羽59s 257ms                                                               47   15, 21:21  
+╰─> nmap -v <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:22 SE Asia Standard Time
+Initiating Ping Scan at 21:22
+Scanning <external ip address> [4 ports]
+Completed Ping Scan at 21:22, 0.27s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 21:22
+Completed Parallel DNS resolution of 1 host. at 21:22, 0.00s elapsed
+Initiating SYN Stealth Scan at 21:22
+Scanning <external ip address> [1000 ports]
+Discovered open port 22/tcp on <external ip address>
+Completed SYN Stealth Scan at 21:22, 3.32s elapsed (1000 total ports)
+Nmap scan report for <external ip address>
+Host is up (0.056s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Read data files from: C:\Program Files (x86)\Nmap
+Nmap done: 1 IP address (1 host up) scanned in 3.98 seconds
+           Raw packets sent: 1007 (44.284KB) | Rcvd: 1003 (40.120KB)
+
+╭─ cmd   coding  羽4s 62ms                                                                 47   15, 21:22  
+╰─> nmap -f <external ip address>
+Warning: Packet fragmentation selected on a host other than Linux, OpenBSD, FreeBSD, or NetBSD.  This may or may not wo
+rk.
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:22 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.056s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Nmap done: 1 IP address (1 host up) scanned in 3.40 seconds
+
+╭─ cmd   coding  羽3s 519ms                                                                47   15, 21:22  
+╰─> nmap -v -f <external ip address>
+Warning: Packet fragmentation selected on a host other than Linux, OpenBSD, FreeBSD, or NetBSD.  This may or may not wo
+rk.
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:23 SE Asia Standard Time
+Initiating Ping Scan at 21:23
+Scanning <external ip address> [4 ports]
+Completed Ping Scan at 21:23, 0.27s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 21:23
+Completed Parallel DNS resolution of 1 host. at 21:23, 0.01s elapsed
+Initiating SYN Stealth Scan at 21:23
+Scanning <external ip address> [1000 ports]
+Discovered open port 22/tcp on <external ip address>
+Completed SYN Stealth Scan at 21:23, 4.00s elapsed (1000 total ports)
+Nmap scan report for <external ip address>
+Host is up (0.057s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Read data files from: C:\Program Files (x86)\Nmap
+Nmap done: 1 IP address (1 host up) scanned in 4.69 seconds
+           Raw packets sent: 1174 (51.632KB) | Rcvd: 1170 (46.812KB)
+
+╭─ cmd   coding  羽4s 755ms                                                                48   15, 21:23  
+╰─> nmap -vv -f <external ip address>
+Warning: Packet fragmentation selected on a host other than Linux, OpenBSD, FreeBSD, or NetBSD.  This may or may not wo
+rk.
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:23 SE Asia Standard Time
+Initiating Ping Scan at 21:23
+Scanning <external ip address> [4 ports]
+Completed Ping Scan at 21:23, 0.11s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 21:23
+Completed Parallel DNS resolution of 1 host. at 21:23, 0.01s elapsed
+Initiating SYN Stealth Scan at 21:23
+Scanning <external ip address> [1000 ports]
+Discovered open port 22/tcp on <external ip address>
+Completed SYN Stealth Scan at 21:23, 2.86s elapsed (1000 total ports)
+Nmap scan report for <external ip address>
+Host is up, received echo-reply ttl 50 (0.070s latency).
+Scanned at 2025-03-15 21:23:15 SE Asia Standard Time for 3s
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE REASON
+22/tcp open     ssh     syn-ack ttl 50
+25/tcp filtered smtp    no-response
+
+Read data files from: C:\Program Files (x86)\Nmap
+Nmap done: 1 IP address (1 host up) scanned in 3.38 seconds
+           Raw packets sent: 1005 (44.196KB) | Rcvd: 1001 (40.036KB)
+
+╭─ cmd   coding  羽3s 457ms                                                                48   15, 21:23  
+╰─> nmap -vv <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:23 SE Asia Standard Time
+Initiating Ping Scan at 21:23
+Scanning <external ip address> [4 ports]
+Completed Ping Scan at 21:23, 0.10s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 21:23
+Completed Parallel DNS resolution of 1 host. at 21:23, 0.00s elapsed
+Initiating SYN Stealth Scan at 21:23
+Scanning <external ip address> [1000 ports]
+Discovered open port 22/tcp on <external ip address>
+Completed SYN Stealth Scan at 21:23, 2.49s elapsed (1000 total ports)
+Nmap scan report for <external ip address>
+Host is up, received echo-reply ttl 50 (0.066s latency).
+Scanned at 2025-03-15 21:23:48 SE Asia Standard Time for 2s
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE REASON
+22/tcp open     ssh     syn-ack ttl 50
+25/tcp filtered smtp    no-response
+
+Read data files from: C:\Program Files (x86)\Nmap
+Nmap done: 1 IP address (1 host up) scanned in 2.99 seconds
+           Raw packets sent: 1005 (44.196KB) | Rcvd: 1001 (40.036KB)
+
+╭─ cmd   coding  羽3s 63ms                                                                 48   15, 21:23  
+╰─> nmap -vv -f <external ip address>
+Warning: Packet fragmentation selected on a host other than Linux, OpenBSD, FreeBSD, or NetBSD.  This may or may not wo
+rk.
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:24 SE Asia Standard Time
+Initiating Ping Scan at 21:24
+Scanning <external ip address> [4 ports]
+Completed Ping Scan at 21:24, 0.11s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 21:24
+Completed Parallel DNS resolution of 1 host. at 21:24, 0.06s elapsed
+Initiating SYN Stealth Scan at 21:24
+Scanning <external ip address> [1000 ports]
+Discovered open port 22/tcp on <external ip address>
+Completed SYN Stealth Scan at 21:24, 3.10s elapsed (1000 total ports)
+Nmap scan report for <external ip address>
+Host is up, received reset ttl 50 (0.056s latency).
+Scanned at 2025-03-15 21:24:04 SE Asia Standard Time for 3s
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE REASON
+22/tcp open     ssh     syn-ack ttl 50
+25/tcp filtered smtp    no-response
+
+Read data files from: C:\Program Files (x86)\Nmap
+Nmap done: 1 IP address (1 host up) scanned in 3.67 seconds
+           Raw packets sent: 1023 (44.988KB) | Rcvd: 1018 (40.728KB)
+
+╭─ cmd   coding  羽3s 745ms                                                                48   15, 21:24  
+╰─> nmap --script smb-vuln* <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:24 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.072s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Nmap done: 1 IP address (1 host up) scanned in 5.74 seconds
+
+╭─ cmd   coding  羽5s 818ms                                                                49   15, 21:24  
+╰─> nmap --script
+nmap: option `--script' requires an argument
+See the output of nmap -h for a summary of options.
+
+╭─ cmd   coding  羽71ms                                                                    49   15, 21:25  
+╰─> nmap --script smb-vuln*
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:25 SE Asia Standard Time
+WARNING: No targets were specified, so 0 hosts scanned.
+Nmap done: 0 IP addresses (0 hosts up) scanned in 0.27 seconds
+
+╭─ cmd   coding  羽348ms                                                                   49   15, 21:25  
+╰─> nmap --script smb-vuln* <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:25 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.070s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Nmap done: 1 IP address (1 host up) scanned in 3.51 seconds
+
+╭─ cmd   coding  羽3s 612ms                                                                50   15, 21:25  
+╰─> nmap --script "not intrunsive"
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:26 SE Asia Standard Time
+^C
+╭─ cmd   coding  羽10s 423ms                                                               50   15, 21:26  
+╰─> nmap --script "not intrusive"
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:26 SE Asia Standard Time
+No profinet devices in the subnet
+^C
+╭─ cmd   coding  羽26s 476ms                                                               51   15, 21:27  
+╰─> nmap --script all
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:27 SE Asia Standard Time
+^C
+╭─ cmd   coding  羽7s 247ms                                                                51   15, 21:27  
+╰─> nmap --script smb-enum-shares <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:28 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.069s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Nmap done: 1 IP address (1 host up) scanned in 6.24 seconds
+
+╭─ cmd   coding  羽6s 318ms                                                                51   15, 21:28  
+╰─> nmap --script smb-vuln* <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:28 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.078s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Nmap done: 1 IP address (1 host up) scanned in 3.62 seconds
+
+╭─ cmd   coding  羽3s 702ms                                                                51   15, 21:28  
+╰─> nmap --script ftp-vuln* <external ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:29 SE Asia Standard Time
+Nmap scan report for <external ip address>
+Host is up (0.063s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE    SERVICE
+22/tcp open     ssh
+25/tcp filtered smtp
+
+Nmap done: 1 IP address (1 host up) scanned in 3.25 seconds
+
+╭─ cmd   coding  羽3s 342ms                                                                52   15, 21:29  
+╰─> msfconsole
+'msfconsole' is not recognized as an internal or external command,
+operable program or batch file.
+
+╭─ cmd   coding  羽17ms                                                                    53   15, 21:30  
+╰─> use exploit/unix/ftp/vsftpd_234_backdoor
+'use' is not recognized as an internal or external command,
+operable program or batch file.
+
+╭─ cmd   coding  羽13ms                                                                    53   15, 21:30  
+╰─> set RHOSTS 10.0.2.13
+Environment variable RHOSTS 10.0.2.13 not defined
+
+╭─ cmd   coding  羽8ms                                                                     53   15, 21:30  
+╰─> run
+'run' is not recognized as an internal or external command,
+operable program or batch file.
+
+╭─ cmd   coding  羽15ms                                                                    53   15, 21:31  
+╰─> nmap <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:31 SE Asia Standard Time
+Nmap scan report for <ip address>
+Host is up (0.0066s latency).
+Not shown: 999 closed tcp ports (reset)
+PORT   STATE SERVICE
+53/tcp open  domain
+MAC Address: 6E:C0:B0:7A:75:73 (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 2.35 seconds
+
+╭─ cmd   coding  羽2s 436ms                                                                54   15, 21:31  
+╰─> nmap <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:32 SE Asia Standard Time
+Nmap scan report for <ip address>
+Host is up (0.0046s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE SERVICE
+53/tcp   open  domain
+2022/tcp open  down
+MAC Address: 6E:C0:B0:7A:75:73 (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.04 seconds
+
+╭─ cmd   coding  羽1s 122ms                                                                54   15, 21:32  
+╰─> nmap <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:33 SE Asia Standard Time
+Nmap scan report for <ip address>
+Host is up (0.0060s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE SERVICE
+53/tcp   open  domain
+2022/tcp open  down
+MAC Address: 6E:C0:B0:7A:75:73 (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.06 seconds
+
+╭─ cmd   coding  羽1s 138ms                                                                55   15, 21:33  
+╰─> nmap <ip address>
+Starting Nmap 7.95 ( https://nmap.org ) at 2025-03-15 21:33 SE Asia Standard Time
+Nmap scan report for <ip address>
+Host is up (0.0040s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT     STATE SERVICE
+53/tcp   open  domain
+2022/tcp open  down
+MAC Address: 6E:C0:B0:7A:75:73 (Unknown)
+
+Nmap done: 1 IP address (1 host up) scanned in 1.03 seconds
+
+╭─ cmd   coding  羽1s 104ms                                                                55   15, 21:33  
+╰─> ssh -p 2022 root@<ip address>
+root@<ip address>'s password: 
+Permission denied, please try again.
+root@<ip address>'s password: 
+Welcome to Alpine, VArtz!
+
+The Alpine Wiki contains a large amount of how-to guides and general
+information about administrating Alpine systems.
+See <http://wiki.alpinelinux.org/>.
+
+You can setup the system with the command: setup-alpine
+
+You may change this message by editing /etc/motd.
+
+localhost:~# echo hacked!
+hacked!
